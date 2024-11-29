@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.prose {
+  max-width: none;
+}
+
+.prose pre {
+  background-color: #1f2937;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.prose code {
+  background-color: #374151;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.prose img {
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.prose blockquote {
+  border-left: 4px solid #3b82f6;
+  background-color: #1f2937;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
+/* Dark theme styles */
+.prose-invert h1,
+.prose-invert h2,
+.prose-invert h3,
+.prose-invert h4,
+.prose-invert h5,
+.prose-invert h6 {
+  color: #f3f4f6;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+/* Light theme styles */
+.prose-slate h1,
+.prose-slate h2,
+.prose-slate h3,
+.prose-slate h4,
+.prose-slate h5,
+.prose-slate h6 {
+  color: #111827;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.prose p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.prose ul,
+.prose ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+  line-height: 1.5;
+}
+
+.prose li {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+.prose hr {
+  margin: 2rem 0;
+  border-color: #4b5563;
+}
+
+[contenteditable] {
+  outline: none;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+[contenteditable]:empty:before {
+  content: attr(placeholder);
+  color: #6b7280;
+  pointer-events: none;
+}
